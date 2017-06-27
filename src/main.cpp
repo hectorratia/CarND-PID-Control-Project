@@ -65,7 +65,7 @@ int main()
           double cte = std::stod(j[1]["cte"].get<std::string>());
           err = err + pow(cte,2);
           double speed = std::stod(j[1]["speed"].get<std::string>());
-          double angle = std::stod(j[1]["steering_angle"].get<std::string>());
+          //double angle = std::stod(j[1]["steering_angle"].get<std::string>());
           double steer_value;
           double throttle;
           double objective_speed = 50 - 20 * fabs(cte); //60 - 25
